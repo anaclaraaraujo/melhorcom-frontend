@@ -1,5 +1,4 @@
-import iconLogo from 'public/icon/logo.svg'
-
+import iconLogo from '/public/icon/logo.svg'
 import { Container } from './styles'
 
 export function Header() {

@@ -12,8 +12,7 @@ export const Content = styled.div`
   flex-grow: 1;
 
   width: 100%;
-
-  margin-top: 40px;
+  margin: 40px 0;
 
   @media (min-width: 1024px) {
     justify-content: center;

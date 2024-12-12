@@ -1,12 +1,16 @@
 import { createBrowserRouter } from 'react-router-dom'
 
-import { AppLayout } from '../_layouts/app'
-import { ListCell } from '../pages/ListCell'
+import { AppLayout } from '@/pages/_layouts/app'
+import { DetailsPhone } from '@/pages/DetailsPhone'
+import { TablePhones } from '@/pages/TablePhones'
 
 export const Router = createBrowserRouter([
   {
     path: '/',
     element: <AppLayout />,
-    children: [{ path: '/', element: <ListCell /> }],
+    children: [
+      { path: '/', element: <TablePhones /> },
+      { path: '/details', element: <DetailsPhone /> },
+    ],
   },
 ])

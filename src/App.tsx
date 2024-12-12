@@ -6,7 +6,7 @@ import { Router } from './routes /Router'
 export function App() {
   return (
     <HelmetProvider>
-      <Helmet titleTemplate="%s | ShopCell" />
+      <Helmet titleTemplate="%s | Shop Phone" />
       <RouterProvider router={Router} />
     </HelmetProvider>
   )

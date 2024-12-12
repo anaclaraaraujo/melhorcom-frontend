@@ -4,9 +4,9 @@ import EditIcon from '@mui/icons-material/Edit'
 import StayCurrentPortraitIcon from '@mui/icons-material/StayCurrentPortrait'
 import { Helmet } from 'react-helmet-async'
 
+import { Button } from '@/components/Button'
+
 import {
-  Button,
-  ButtonAction,
   Container,
   HeaderContainer,
   ListPhone,
@@ -17,14 +17,14 @@ import {
   Title,
 } from './styles'
 
-export function ListCell() {
+export function TablePhones() {
   return (
     <>
       <Helmet title="Produtos" />
       <Container>
         <HeaderContainer>
           <Title>Produtos</Title>
-          <Button>
+          <Button to="/details" variant="navigate">
             <AddIcon />
             <StayCurrentPortraitIcon />
             Adicionar
@@ -53,12 +53,12 @@ export function ListCell() {
                   <TableCell>Preto</TableCell>
                   <TableCell>
                     <div>
-                      <ButtonAction>
-                        <EditIcon />
-                      </ButtonAction>
-                      <ButtonAction>
-                        <DeleteIcon />
-                      </ButtonAction>
+                      <Button variant="action" to="/details">
+                        <EditIcon sx={{ fontSize: 24 }} />
+                      </Button>
+                      <Button variant="action" to="/details">
+                        <DeleteIcon sx={{ fontSize: 24 }} />
+                      </Button>
                     </div>
                   </TableCell>
                 </TableRow>

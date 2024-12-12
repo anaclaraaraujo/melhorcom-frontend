@@ -20,20 +20,6 @@ export const Title = styled.h1`
   color: #1d1d1d;
 `
 
-export const Button = styled.button`
-  display: flex;
-
-  background: #dae3ed;
-  border: 1px solid #1d1d1d;
-  border-radius: 5px;
-  padding: 8px 16px 8px 24px;
-
-  font-size: 14px;
-  font-weight: 500;
-  color: #1d1d1d;
-  text-transform: uppercase;
-`
-
 export const ListPhone = styled.div`
   display: flex;
   flex-direction: column;
@@ -68,7 +54,7 @@ export const TableCell = styled.td`
   text-align: left;
   border-top: 1px solid #1d1d1d;
 
-  padding: 24px 24px 24px 43px;
+  padding: 24px;
 
   &:last-child {
     div {
@@ -79,10 +65,4 @@ export const TableCell = styled.td`
       align-items: center;
     }
   }
-`
-
-export const ButtonAction = styled.button`
-  background: none;
-  border: none;
-  cursor: pointer;
 `
